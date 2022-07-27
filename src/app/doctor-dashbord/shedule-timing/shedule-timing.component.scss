@@ -1,0 +1,13 @@
+@import "/src/styles.scss";
+
+// doctor-Shedule
+
+.add_list-section {
+  
+  @include list_section;
+
+  .dr-shedule-header{
+      @include header
+  }
+
+}

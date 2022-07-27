@@ -1,0 +1,83 @@
+@import "/src/styles.scss";
+
+.add_list-section {
+    
+    @include list_section;
+}
+
+// Basic Information
+
+.profile-img-box {
+    display: flex;
+    margin: 30px;
+    padding: 20px;
+    border: 1;
+    border: 1px solid #e5e7ec;
+    max-width: 60%;
+    border-radius: 20px;
+
+    .profile-button-text {
+        padding: 0px 0px 0px 40px;
+
+        p {
+            line-height: 40px;
+            color: #a1acb5;
+        }
+
+        .upload-button {
+            @include submit-b
+        }
+    }
+}
+
+.basic_i-header {
+    @include header
+}
+
+// About Me
+
+.aboutme-header{
+    @include header
+}
+
+// Contact Details
+.Contact_d-header{
+    @include header
+}
+
+// clinic info
+.clinic_i-header{
+    @include header
+}
+
+.upload-image{
+    padding: 30px 0 0 0px;
+
+    .Clinic-img-2{
+        margin: 0px 0px 0px 30px
+    }
+}
+
+// Education
+.education-header{
+    @include header
+}
+
+// experience
+.experience-header{
+    @include header
+}
+
+// button
+.change_p-s_button {
+    padding: 0 0px 60px 26px;
+
+    .submit-button {
+        @include submit-b
+    }
+
+    .cancle-button {
+        @include cancle-b
+    }
+
+}

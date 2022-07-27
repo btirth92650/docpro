@@ -1,0 +1,41 @@
+.dr-navbar-section {
+    padding: 52px 0px 48px 0px;
+    background:url(http://azim.commonsupport.com/Docpro/assets/images/shape/shape-70.png)no-repeat 10% 0,
+    url(http://azim.commonsupport.com/Docpro/assets/images/shape/shape-71.png)no-repeat 90% 100%,#453f85;
+}
+
+.dr-navbar-title {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+
+    h1 {
+        font-weight: 800;
+    }
+} 
+.dr-navbar-iconbox {
+    padding: 13px 100px;
+    display: flex;
+    margin: 0px 0px 0px 0px;
+    max-width: 100%;
+    background: #ebf7f6;
+
+
+    a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            border-bottom: 2px solid black;
+        }
+    }
+    
+    i {
+        margin: 6px
+    }
+    h5{
+        color: #54717a;
+    }
+
+}

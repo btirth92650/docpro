@@ -1,0 +1,217 @@
+<section class="d-d-heder">
+  <div class="d-d-backcolor">
+    <h1>Book Appointment</h1>
+  </div>
+</section>
+
+<div class="container h-s-content">
+  <h5><a href="admin">Home </a></h5>
+  <i class="fa fa-chevron-right" aria-hidden="true"></i>
+  <h5>Book Appointment</h5>
+</div>
+
+<!-- demop -->
+
+<div class="background">
+  <div class="r-background">
+    <div class="content-box">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-8">
+            <!-- Appointment Information -->
+
+            <div class="Appointment-box2">
+              <div class="content-box1">
+                <div class="header2">
+                  <h2>Appointment Information</h2>
+                </div>
+                <div class="Appointment-information">
+                  <form action="" [formGroup]="appointmentInfo">
+                  <div class="p-book  ">
+                    <p>Are You a New Patient?</p>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" formControlName="oldPtient" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Yes i have seen this doctor before
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" formControlName="newPatient" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        No i am a new patient
+                      </label>
+                    </div>                  
+                  <div class="p-book">
+                    <p>Please Specify Your Sex</p>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" formControlName="male" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Male
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" formControlName="female" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                       Female
+                      </label>
+                    </div>
+                  <div class="p-book">
+                    <p>Your Information:</p>
+                    </div>
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="form-group mb-3" >
+                              <label>Your name</label>
+                              <input type="text" formControlName="name" class="form-control" placeholder="Enter Your name">
+                            </div>
+                          </div>
+                          <div class="col-sm-6 mb-3">
+                            <div class="form-group">
+                              <label>Your email</label>
+                              <input type="text" formControlName="email" class="form-control" placeholder="Enter Your email">
+                            </div>
+                          </div>
+                          <div class="form-group mb-3">
+                            <label>Address</label>
+                            <input type="text" formControlName="address" class="form-control" placeholder="Enter Address">
+                          </div>
+                          <div class="col-6">
+                            <div class="form-group mb-3">
+                              <label for="exampleFormControlSelect1">City</label>
+                              <select class="form-select form-select-md " formControlName="city" aria-label=".form-select-lg example">
+                                <option selected>select city</option>
+                                <option value="1">city One</option>
+                                <option value="2">city Two</option>
+                                <option value="3">city Three</option>
+                              </select>
+                            </div>
+                            <div class="form-group mb-3">
+                              <label>Zip</label>
+                              <input type="text" formControlName="zip" class="form-control" placeholder="Enter Zip">
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="form-group mb-3">
+                              <label for="exampleFormControlSelect1">State</label>
+                              <select class="form-select form-select-md mb-3" formControlName="state" aria-label=".form-select-lg example">
+                                <option selected>select state</option>
+                                <option value="1">state One</option>
+                                <option value="2">state Two</option>
+                                <option value="3">state Three</option>
+                              </select>
+                            </div>
+                            <div class="form-group mb-3">
+                              <label>Birthday</label>
+                              <input type="date" formControlName="dob" class="form-control" placeholder="Enter Birthday">
+                            </div>
+                          </div>
+                          <div class="form-group mb-3">
+                            <label for="exampleFormControlTextarea1">Note to the doctor (optional)</label>
+                            <textarea class="form-control" formControlName="note" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                        </div>
+                        <div class="p-book">
+                          <p>Payment Information:</p>
+                          </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="form-group">
+                          <label>Name on card</label>
+                          <input type="text" formControlName="nameOnCard" class="form-control" placeholder="Enter Name on card">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-6">
+                          <div class="form-group">
+                            <label>Card number</label>
+                            <input type="text" formControlName="cardNo" class="form-control" placeholder="xxxx-xxxx-xxxx-xxxx">
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="form-group">
+                            <div class="card-logo">
+                              <img src="	http://azim.commonsupport.com/Docpro/assets/images/resource/card-1.png" alt="">
+                              <img src="	http://azim.commonsupport.com/Docpro/assets/images/resource/card-2.png" alt="">
+                              <img src="	http://azim.commonsupport.com/Docpro/assets/images/resource/card-3.png" alt="">
+                              <img src="	http://azim.commonsupport.com/Docpro/assets/images/resource/card-4.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-6">
+                          <div class="form-group">
+                            <label>Expiration date</label>
+                            <input type="text" formControlName="expiryDate" class="form-control" placeholder="MM/YY">
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="form-group">
+                            <label>Security code</label>
+                            <input type="text" formControlName="securityCode" class="form-control" placeholder="CCV">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="term-condition">
+                        <div class="form-check form_item mb-3">
+                          <input type="checkbox" formControlName="tAndc" required class="form-check-input" >
+                          <label class="form-check-label" >I accept <a href="">terms</a> and <a href="">conditions</a> and general policy</label>
+                        </div>
+                      </div>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Booking Summary -->
+          <div class="col-4">
+            <div class="Appointment-box2">
+                <div class="header2">
+                  <h2>Booking Summary</h2>
+              </div>
+              <div class="Booking-Summary-item">
+                <ul class="item-liest-1">
+                  <li>Date</li>
+                  <li>Time</li>
+                  <li>Doctor name</li>
+                </ul>
+                <ul class="item-liest-2">
+                  <li>07/10/2020</li>
+                  <li>09:30AM</li>
+                  <li>Dr. Agnes Ayres</li>
+                </ul>
+
+              </div>
+
+              <div class="Booking-Summary-item">
+                <ul class="item-liest-1">
+                  <li>General Consultation</li>
+                  <li>Back Pain</li>
+                </ul>
+                <ul class="item-liest-2">
+                  <li>$50</li>
+                  <li>$60</li>
+                </ul>
+              </div>
+              <div class="Booking-Summary-item">
+                <ul class="item-liest-1">
+                  <li class="total">Total</li>
+                </ul>
+                <ul class="item-liest-2">
+                  <li class="total-amount">$110</li>
+                </ul>
+                <div class="button-comfirm-and-pay">
+
+                </div>
+
+              </div>
+              <button type="button" [disabled]="!appointmentInfo.valid" (click)="submit()" class="btn btn-primary joinnow">Comfirm and Pay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

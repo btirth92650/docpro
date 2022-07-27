@@ -1,0 +1,110 @@
+@import "/src/styles.scss";
+
+
+// Favourite List
+
+.add_list-section {
+    @include list_section;
+
+    .favourite-list-header {
+        @include header
+    }
+
+    .f-content_box {
+        padding: 20px 0px 20px 0;
+
+        .favourite-inner-box {
+            background-color: #fff;
+            box-shadow: 0 20px 30px rgb(0 24 73 / 8%);
+            border-radius: 25px;
+            // padding: 20px 10px;
+            // border-radius: 15px 50px 30px;
+
+            .f-content-box {
+
+                padding: 20px;
+
+                p {
+                    font-size: 17px;
+                    color: #808080;
+
+                }
+            }
+
+            .image-box {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .title {
+                display: flex;
+
+                i {
+                    display: flex;
+                    align-items: center;
+                    padding: 0px 0px 0px 30px;
+                }
+
+                h3 {
+                    font-size: 25px;
+                    font-weight: 700;
+
+                }
+            }
+
+            .star-icon {
+
+                i {
+                    color: #ffab01;
+                    padding: 0 0 0 7px;
+                }
+
+                span {
+                    padding: 0 0 0 12px;
+
+                }
+            }
+
+            .location {
+                line-height: 30px;
+                color: #808080;
+
+                i {
+                    font-size: 17px
+                }
+
+                span {
+                    padding: 0 0 0 12px;
+                }
+
+                ;
+            }
+
+            .available {
+                p {
+                    color: #01c4ea;
+                }
+            }
+
+            .bn-button {
+
+                button {
+                    background-color: #39cabb;
+                    border: none;
+                    border-radius: 30px;
+                    padding: 7px 20px;
+                    font-size: 20px;
+                    color: #fff;
+                    font-weight: 600;
+                    margin: 0 0 0 153px;
+                    transition: all 0.8s ease-in-out;
+
+                    &:hover {
+                        background-color: #453f85;
+                    }
+                }
+            }
+        }
+    }
+}

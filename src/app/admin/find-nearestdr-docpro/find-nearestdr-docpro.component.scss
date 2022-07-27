@@ -1,0 +1,79 @@
+img{
+    max-width: 100%;
+}
+.hero{
+     background: url(http://azim.commonsupport.com/Docpro/assets/images/shape/shape-2.png);
+    // background: url(http://azim.commonsupport.com/Docpro/assets/images/shape/shape-3.png) no-repeat 0 0, url(http://azim.commonsupport.com/Docpro/assets/images/shape/shape-4.png) no-repeat 100% 100%,#453f85;
+    padding: 100px 0;
+    bottom: 181px;
+    position: relative;
+    .hero-content{
+        h1{
+            display: block;
+            font-size: 75px;
+            line-height: 80px;
+            margin-bottom: 10px;
+            font-weight: 900;
+            @media(max-width:1024px){
+                font-size: 40px;
+            }
+        }
+        p{
+            font-size: 20px;
+            line-height: 28px;
+            color: #061a3a;
+            margin-bottom: 43px;
+            margin-top: 40px;
+        }
+        .search-box{
+            background-color: #fff;
+            border-radius: 50px;
+            display: flex;
+            max-width: 80%;
+            padding: 5px;
+            input{
+                padding: 25px 15px;
+                width: 100%;
+                border: none;
+                outline: none;
+                background-color: transparent;
+            }
+            button{
+                width: 75px;
+                height: 75px;
+                background-color: #39cabb;
+                border-radius: 100%;
+                flex-shrink: 0;
+                i{
+                    font-size: 30px;
+                    color: #fff;
+                }
+            }
+        }
+        .hero-list{
+            display: flex;
+            margin: 0;
+            padding: 0;
+            margin-top: 30px;
+            li{
+                margin-right: 50px;
+                list-style: none;
+                position: relative;
+                
+                &:before{
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    border: 2px solid #000;
+                    display: inline-block;
+                    border-radius: 100%;
+                    margin-right: 10px;
+                }
+                &.active:before{
+                    background-color: #39cabb;
+                    border-color: #39cabb;
+                }
+            }
+        }
+    }
+}

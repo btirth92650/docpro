@@ -1,0 +1,104 @@
+.register-section {
+    padding: 52px 0px 48px 0px;
+    background:url(http://azim.commonsupport.com/Docpro/assets/images/shape/shape-70.png)no-repeat 10% 0,
+    url(http://azim.commonsupport.com/Docpro/assets/images/shape/shape-71.png)no-repeat 90% 100%,#453f85;
+}
+
+.register-title {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+
+    h1 {
+        font-weight: 800;
+    }
+} 
+
+
+
+.r-background {
+    background-color: #ebf7f6;
+    width: 100%;
+    padding: 63px 0px;
+}
+
+.h-s-content {
+    padding: 13px 50px;
+    display: flex;
+
+    h5{
+        color: #808080;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            border-bottom: 2px solid black;
+        }
+    }
+    
+    i {
+        margin: 6px
+    }
+
+}
+
+.registration-box {
+    padding-bottom: 40px;   
+    margin: auto;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 30%;
+}
+
+.header {
+    padding: 10px;
+    background: #453f85;
+
+    h2 {
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+    }
+}
+
+.content-item {
+    padding: 20px 40px 0px 40px;
+}
+
+.r-button {
+    text-align: center;
+    // margin-top: 20px;
+
+    button {
+        background: #39cabb;
+        border-radius: 19px;
+        min-width: 65%;
+        border: none;
+        
+        &:hover{
+            background-color: #453f85;
+        }
+    }
+}
+
+.p-d-button {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.facebook-btn {
+    background: #3a559f;
+    border-radius: 19px;
+}
+
+.google-btn {
+    background: #dd4b39;
+    border-radius: 19px;
+}

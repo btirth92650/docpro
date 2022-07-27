@@ -1,0 +1,373 @@
+<!-- Basic Information -->
+<div class="container">
+    <section class="add_list-section">
+
+        <div class="basic_i-header">
+            <h1>Basic Information</h1>
+            <a href=""><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+        </div>
+        <div class="profile-img-box"> 
+            <div class="profile-img">
+                <img src="	http://azim.commonsupport.com/Docpro/assets/images/resource/profile-3.png" alt="">
+            </div>
+            <div class="profile-button-text">
+                <button type="file" class="upload-button"><i class="fa fa-upload" aria-hidden="true"></i>Upload
+                    Photo</button>
+                <p> Allowed JPG, GIF or PNG. Max size of 2MB</p>
+            </div>
+        </div>
+        <form action="" [formGroup]="basicI">
+            <div class="form-content">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Username*</label>
+                            <input type="text" formControlName="userName" placeholder="Username*" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">First name*</label>
+                            <input type="text" formControlName="firstName" placeholder="First name*" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Last name</label>
+                            <input type="text" formControlName="lastName" placeholder="enter your name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Email</label>
+                            <input type="email" formControlName="email" placeholder="E-mail" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Mobile number</label>
+                            <input type="text" formControlName="mobileNo" placeholder="Mobile number" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Gender</label>
+                            <input type="text" formControlName="gender" placeholder="Gender" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Date of birth</label>
+                            <input type="date" formControlName="dob" placeholder="Date of birth" class="form-control">
+                        </div>
+                    </div>
+                    <!-- <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Address:</label>
+                        <input type="text" placeholder="enter your Address" class="form-control">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </form>
+    </section>
+</div>
+
+
+<!-- About Me -->
+<div class="container">
+    <section class="add_list-section">
+
+        <div class="aboutme-header">
+            <h1>About Me</h1>
+            <a href=""><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+        </div>
+        <form action="" [formGroup]="aboutMe">
+            <div class="form-content">
+                <div class="row">
+                    <div class="form-group form_item">
+                        <label for="" class="form-label">Biography:</label>
+                        <textarea formControlName="biography" placeholder="enter your name" class="form-control" rows="4"></textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+</div>
+
+<!-- Contact Details -->
+<div class="container">
+    <section class="add_list-section">
+
+        <div class="Contact_d-header">
+            <h1>Social Network Info</h1>
+
+            <!-- <button class="submit-button">save change <i class="fa fa-arrow-right" aria-hidden="true"></i></button> -->
+            <a href="" class="menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+        </div>
+
+        <form action="" [formGroup]="socialNI">
+            <div class="form-content">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Address1</label>
+                            <input type="text" formControlName="address1" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Address2</label>
+                            <input type="text" formControlName="address2" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">City</label>
+                            <input type="email" formControlName="city" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">State</label>
+                            <input type="text" formControlName="state" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Zip code</label>
+                            <input type="email" formControlName="zipCode" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Country</label>
+                            <input type="text" formControlName="country" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+</div>
+
+<!-- Clinic Info -->
+<div class="container">
+    <section class="add_list-section">
+
+        <div class="clinic_i-header">
+            <h1>Clinic Info</h1>
+
+            <!-- <button class="submit-button">save change <i class="fa fa-arrow-right" aria-hidden="true"></i></button> -->
+            <a href="" class="menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+        </div>
+
+        <form action="" [formGroup]="clinicI">
+            <div class="form-content">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Clinic name 1</label>
+                            <input type="text" formControlName="clinicName1" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Clinic address 1</label>
+                            <input type="text" formControlName="clinicAddess1" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Clinic name 2</label>
+                            <input type="email" formControlName="clinicName2" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Clinic address 2</label>
+                            <input type="text" formControlName="clinicAddess2" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="" class="form-label">Upload profile picture</label>
+                        <input type="file" formControlName="uploadProfilePicture" class="form-control">
+                    </div>
+                </div>
+                <div class="upload-image">
+                    <img class="Clinic-img-1" src="http://azim.commonsupport.com/Docpro/assets/images/resource/clinic-1.jpg" alt="">
+                    <img class="Clinic-img-2" src="http://azim.commonsupport.com/Docpro/assets/images/resource/clinic-2.jpg" alt="">
+                </div>
+            </div>
+        </form>
+    </section>
+</div>
+
+<!-- Education -->
+<div class="container">
+    <section class="add_list-section">
+
+        <div class="education-header">
+            <h1>Education</h1>
+
+            <!-- <button class="submit-button">save change <i class="fa fa-arrow-right" aria-hidden="true"></i></button> -->
+            <a href="" class="menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+        </div>
+
+        <form action="" [formGroup]="education">
+            <div class="form-content">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Degree</label>
+                            <input type="text" formControlName="degree" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Institute</label>
+                            <input type="text" formControlName="institute" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Passing year</label>
+                            <input type="text" formControlName="passingYear" class="form-control">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Degree</label>
+                            <input type="email" formControlName="degree1" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Institute</label>
+                            <input type="text" formControlName="institute1" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Passing year</label>
+                            <input type="text" formControlName="passingYear1" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Degree</label>
+                            <input type="text" formControlName="degree2" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Institute</label>
+                            <input type="text" formControlName="institute2" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Passing year</label>
+                            <input type="text" formControlName="passingYear2" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+</div>
+
+<!-- Experience -->
+<div class="container">
+    <section class="add_list-section">
+
+        <div class="experience-header">
+            <h1>Experience</h1>
+
+            <!-- <button class="submit-button">save change <i class="fa fa-arrow-right" aria-hidden="true"></i></button> -->
+            <a href="" class="menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+        </div>
+
+        <form action="" [formGroup]="experience">
+            <div class="form-content">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Hospital name</label>
+                            <input type="text" formControlName="hospitalName" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Designation</label>
+                            <input type="text" formControlName="designation" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">From</label>
+                            <input type="text" formControlName="from" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">To</label>
+                            <input type="text" formControlName="to" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Hospital name</label>
+                            <input type="text" formControlName="hospitalName1" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">Designation</label>
+                            <input type="text" formControlName="designation1" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">From</label>
+                            <input type="text" formControlName="from1" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group form_item">
+                            <label for="" class="form-label">To</label>
+                            <input type="text" formControlName="to1" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+</div>
+
+<!-- button -->
+<div class="change_p-s_button ">
+    <button class="submit-button" (click)="submit()">save change <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+    <button class="cancle-button">cancle</button>
+</div>

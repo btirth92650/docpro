@@ -1,0 +1,31 @@
+// logo img
+.logobg {
+    background:url(http://azim.commonsupport.com/Docpro/assets/images/shape/shape-3.png)no-repeat 0% 40%,
+                url(http://azim.commonsupport.com/Docpro/assets/images/shape/shape-4.png)no-repeat 100% 0%, #453f85;
+    width: 100%;
+    padding: 100px;
+    position: relative;
+    bottom: 100px;
+
+
+    .logoname {
+        display: flex;
+        justify-content: center;
+        
+        img {
+          margin: 5px 20px;
+      
+          &:hover {
+            transform: scale(1.1);
+            transition: all 0.1s ease-in-out;
+          }
+        }
+      }
+
+  }
+  
+  
+  
+  
+  
+  

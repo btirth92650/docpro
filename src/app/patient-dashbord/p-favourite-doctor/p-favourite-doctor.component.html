@@ -1,0 +1,49 @@
+<!-- Favourite List -->
+<div class="container">
+    <section class="add_list-section">
+
+        <div class="favourite-list-header">
+            <h1>Favourite List</h1>
+            <a href=""><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+        </div>
+ 
+        <div class="form-content ">
+            <div class="row">
+                <div class="col-md-4" *ngFor="let item of favouritelist">
+                    <div class="f-content_box">
+                        <div class="favourite-inner-box">
+                            <div class="image-box">
+                                <img src="{{item.image}}" alt="">
+                            </div>
+                                <div class="f-content-box">
+                                    <div class="title">
+                                        <h3>{{item.title}}</h3>
+                                        <i class="{{item.cheakicon}}" aria-hidden="true"></i>
+                                    </div>
+                                    <p>{{item.description}}</p>
+                                    <div class="star-icon">
+                                        <i class="{{item.staricon}}" aria-hidden="true"></i>
+                                        <i class="{{item.staricon}}" aria-hidden="true"></i>
+                                        <i class="{{item.staricon}}" aria-hidden="true"></i>
+                                        <i class="{{item.staricon}}" aria-hidden="true"></i>
+                                        <i class="{{item.staricon}}" aria-hidden="true"></i>
+                                        <span>{{item.spanno}}</span>
+                                    </div>
+                                    <div class="location">
+                                        <i class="{{item.locationicon}}" aria-hidden="true"></i>
+                                        <span>{{item.location}}</span>
+                                    </div>
+                                    <div class="available">
+                                        <p>{{item.available}}</p>
+                                    </div>
+                                    <div class="bn-button">
+                                        <button routerLink="{{item.link}}">Book Now</button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

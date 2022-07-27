@@ -1,0 +1,32 @@
+<div class="container">
+    <section class="add_list-section">
+
+        <div class="reviews-header">
+            <h1>Reviews List</h1>
+        </div>
+
+        <div class="form-content">
+            <div class="reviews-image-box" *ngFor="let item of reviews">
+                <div class="review-image">
+                    <img src="{{item.image}}" alt="">
+                </div>
+                <div class="review-item">
+                    <h5>{{item.title}}
+                        <div class="review-star">
+                            <i class="{{item.staricon}}" aria-hidden="true"></i>
+                            <i class="{{item.staricon}}" aria-hidden="true"></i>
+                            <i class="{{item.staricon}}" aria-hidden="true"></i>
+                            <i class="{{item.staricon}}" aria-hidden="true"></i>
+                        </div>
+                    </h5>
+                    <h6><i class="{{item.calculatoricon}}" aria-hidden="true"></i>{{item.date}}</h6>
+                    <p>{{item.description}}</p>
+                    <div class="reviews-button">
+                    <a type="" class="{{item.buttonclass}}"><i class="{{item.replyicon}}" aria-hidden="true"></i>{{item.button}}</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

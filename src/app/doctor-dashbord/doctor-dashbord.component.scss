@@ -1,0 +1,15 @@
+
+.side-background{
+    background: #ebf7f6;
+}
+.side-padding_col9{
+    padding: 0;
+    // width: 100%;
+    height: 815px;
+    overflow-y: scroll;
+    
+}
+.side-padding_col9::-webkit-scrollbar { 
+    display: none;
+  }
+  

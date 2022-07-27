@@ -1,0 +1,61 @@
+@import "/src/styles.scss";
+
+.add_list-section {
+        background: #fff;
+        width: 100%;
+        margin: 0px 30px 30px 0px;
+        border-radius: 20px;
+
+
+    .reviews-header {
+        padding: 30px;
+        // border-bottom: 2px solid #e5e7ec;
+
+        h1 {
+            font-size: 30px;
+            font-weight: 700;
+            color: #00224f;
+
+        }
+    }
+
+    .form-content {
+        // padding: 30px;
+
+        .reviews-image-box {
+            display: flex;
+            border-top: 2px solid #e5e7ec;
+            padding: 40px 40px 40px 40px;
+
+
+            .review-item {
+                margin-left: 20px;
+
+                h5 {
+                    display: flex;
+                    justify-content: space-between;
+
+                }
+
+                .review-star {
+                    color: #ffab01;
+                }
+
+                .reviews-button {
+                    margin-top: 40px;
+
+                    a {
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+                }
+
+                .replay-button {
+                    @include cancle-b;
+                }
+
+            }
+        }
+
+    }
+}

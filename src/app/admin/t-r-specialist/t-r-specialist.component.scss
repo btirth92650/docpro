@@ -1,0 +1,139 @@
+// MEET OUR PROFESSIONALS
+.meet {
+    display: flex;
+    justify-content: center;
+    font-size: 1pc;
+    color: #39CABA;
+    position: relative;
+    top: -6pc;
+  }
+  
+  .meet1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    bottom: 23pc;
+  }
+  
+  .meet2 {
+    position: relative;
+    top: -5pc;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  
+  }
+  
+  .top {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -6pc;
+    color: #39cabb;
+    font-weight: 900;
+  }
+  
+  .meet-items {
+    position: absolute;
+    top: -2pc;
+  }
+  
+  .meet-box-bg {
+    background: #0000000a;
+    width: 37%;
+    height: 43%;
+    border-radius: 15px;
+    position: relative;
+    top: 18pc;
+  
+    img {
+      position: relative;
+      left: 2pc;
+      top: 5pc;
+    }
+  
+    h2 {
+      position: absolute;
+      left: 10pc;
+      top: 5pc;
+      font-size: 27px;
+      font-weight: 700;
+    }
+  
+    p {
+      position: relative;
+      left: 10pc;
+      top: 1pc;
+      font-weight: 600;
+    }
+  
+    h3 {
+      position: relative;
+      left: 10pc;
+      font-size: 21px;
+      top: 1pc;
+    }
+  }
+  
+  
+  
+  .str {
+    position: absolute;
+    left: 10pc;
+    top: 13pc;
+  
+    i {
+      font-size: 22px;
+      color: #ffab01;
+      margin-left: 7px;
+      ;
+    }
+  }
+  
+  .text32 {
+    position: absolute;
+    left: 19pc;
+    top: 207px;
+    font-size: 19px;
+  }
+  
+  .today {
+    position: relative;
+    top: 5px;
+    left: 23pc;
+    font-size: 19px;
+  }
+  
+  .checkicon {
+    position: absolute;
+    top: 82px;
+    left: 23pc;
+    font-size: 30px;
+    color: #39cabb;
+  }
+  
+  .cardicon {
+    content: "\f05d";
+    position: absolute;
+    top: 84px;
+    left: 25pc;
+    font-size: 24px;
+    color: #39cabb;
+  }
+  
+  .address {
+    p {
+      position: relative;
+      top: 0pc;
+      left: 12pc
+    }
+  
+    i {
+      content: "\f041";
+      position: absolute;
+      font-size: 27px;
+      left: 170px;
+      top: 237px;
+    }
+  }

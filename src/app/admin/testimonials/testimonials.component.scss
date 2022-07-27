@@ -1,0 +1,134 @@
+// TESTIMONIALS
+.trsrimonials {
+    width: 100%;
+    position: relative;
+    
+  }
+  
+  .img-trsrimonials1 {
+    width: 104%;
+    height: 100%;
+  }
+  
+  .img-trsrimonials2 {
+    width: 745px;
+    height: 100%;
+  }
+  
+  .trsrimonials-box {
+    position: absolute;
+    z-index: 10;
+    top: 5pc;
+    left: 16pc;
+    background: white;
+    width: 39%;
+    height: 69%;
+    border-radius: 15px
+  }
+  
+  h6 {
+    position: relative;
+    top: 47px;
+    left: 3pc;
+    color: #39cabb;
+  }
+  
+  .what {
+    position: relative;
+    left: 3pc;
+    top: 3pc;
+    font-size: 3pc;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: #39cabb;
+  }
+  
+  p {
+    position: relative;
+    top: 4pc;
+    width: 24pc;
+    left: 3pc;
+    font-weight: 400;
+  }
+  
+  .user-img {
+    img {
+      position: relative;
+      top: 5pc;
+      left: 4pc;
+    }
+  
+    .p1 {
+      position: relative;
+      left: 10pc;
+      top: 17px;
+      font-size: 20px;
+      font-weight: 500;
+      color: #39cabb;
+    }
+  
+    .p2 {
+      position: relative;
+      left: 10pc;
+      top: -1px;
+      color: red;
+    }
+  }
+  
+  .button-img {
+    img {
+      position: relative;
+      bottom: 11pc;
+      width: 11pc;
+      left: 24pc;
+    }
+  }
+  
+  .left-arrow {
+    position: relative;
+    bottom: 20pc;
+    left: 29pc;
+    width: 50px;
+    height: 50px;
+    line-height: 60px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    background: #fff;
+    color: #061a3a;
+    box-shadow: 0 0px 50px #d5edea;
+    cursor: pointer;
+    transition: all 500ms ease;
+    border: 1px solid;
+  
+    i {
+      position: relative;
+      bottom: 6px;
+      font-size: 24px;
+    }
+  }
+  
+  .right-arrow {
+    position: relative;
+    bottom: 16pc;
+    left: 26pc;
+  
+    width: 50px;
+    height: 50px;
+    line-height: 60px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    background: #fff;
+    color: #061a3a;
+    box-shadow: 0 0px 50px #d5edea;
+    cursor: pointer;
+    transition: all 500ms ease;
+    border: 1px solid;
+  
+    i {
+      position: relative;
+      bottom: 6px;
+      font-size: 24px;
+    }
+  }

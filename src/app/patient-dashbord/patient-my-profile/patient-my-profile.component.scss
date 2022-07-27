@@ -1,0 +1,57 @@
+@import "/src/styles.scss";
+
+
+// Basic Information
+
+.add_list-section {
+    @include list_section;
+    
+    .basic_i-header{
+        @include header
+    }
+
+}
+
+
+.profile-img-box {
+    display: flex;
+    margin: 30px;
+    padding: 20px;
+    border: 1;
+    border: 1px solid #e5e7ec;
+    max-width: 60%;
+    border-radius: 20px;
+
+    .profile-button-text {
+        padding: 0px 0px 0px 40px;
+
+        p {
+            line-height: 40px;
+            color: #a1acb5;
+        }
+
+        .upload-button {
+            @include submit-b
+        }
+    }
+}
+
+// Social Network Info
+
+.social-n-i-header {
+    @include header
+}
+
+// button
+.change_p-s_button {
+    padding: 0 0px 60px 26px;
+
+    .submit-button {
+        @include submit-b
+    }
+
+    .cancle-button {
+        @include cancle-b
+    }
+
+}

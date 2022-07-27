@@ -1,0 +1,94 @@
+.sidebar-section {
+    width: 100%;
+    padding: 0px 20px 30px 20px;
+    
+    .sidebar-box {
+        padding-bottom: 20px;
+        background: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+
+        .sidebar-header {
+            padding: 10px;
+            background: #453f85;
+
+            .sidebar-imagebox {
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .sidebar-listbox {
+
+            .sidebar_c-box {
+                padding: 0 30px 0 30px;
+
+                .sidebar_content {
+                    border-radius: 10px;
+                    border: 1px solid #fff;
+                    padding: 10px;
+                    position: relative;
+                    bottom: 50px;
+                    background: #fff;
+                    box-shadow: 0 20px 30px rgb(0 24 73 / 8%);
+
+                    h1 {
+                        font-size: 25px;
+                        text-align: center;
+                        font-weight: 700;
+                    }
+
+                    p {
+                        text-align: center;
+                        font-size: 19px;
+                        color: #808080;
+                    }
+                }
+            }
+
+            .sidebar-list-item {
+                list-style: none;
+                padding: 0;
+                line-height: 50px;
+
+                li {
+                    border-top: 1px solid #e5eded;
+                    padding: 0 0px 0px 30px;
+
+                    
+                    
+                    &:hover {
+                        // color: #39cabb;
+                        background-color: #e5eded;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        padding: 0 0 0 15px;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: #061a3a;
+                        font-weight: 500;
+                    }
+
+                    i {
+                        font-size: 15px;
+                        color: #b3b3b3;
+                        margin-right: 20px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.active{
+    background-color: #e5eded;
+    
+}
+
+

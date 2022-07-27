@@ -1,0 +1,84 @@
+
+@import "/src/styles.scss";
+
+.about-patter-2{
+    
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    opacity: 0.7;
+    background-color: #39cabb;
+}
+
+
+.about-image{
+    background: url(http://azim.commonsupport.com/Docpro/assets/images/shape/shape-15.png) no-repeat 0%,;
+    z-index: 1;
+    
+    
+   img{
+    
+    width: 100%;
+    padding: 30px;
+
+   }
+}
+.about-name-content{
+    // left: 60px;
+    // position: relative;
+    // top: 60px;
+    padding: 30px;
+}
+.about-name{
+   h5{
+    color: #39cabb;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 20px;
+   }
+   h1{
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 60px;
+    color: #00224f;
+   }
+  
+   
+}
+.about-text{
+    margin-top: 24px;
+    p{
+        font-family: 'Poppins', sans-serif;
+        color: #808080;
+        font-weight: 400;
+        margin: 0px;
+        font-size: 19px;
+       }
+}
+.about-li-style{
+  padding: 25px 0 0 0 ;
+   list-style: none;
+    li{
+        font-size: 20px;
+        &:before{
+            content: '';
+            width: 10px;
+            height: 10px;
+            border: 2px solid #39cabb;
+            display: inline-block;
+            border-radius: 100%;
+            margin-right: 10px;
+        }
+        // &.active:before{
+        //     background-color: #39cabb;
+        //     border-color: #39cabb;
+        // }
+    }
+}
+.about-button{
+    //  padding-top: 20px;
+    button{
+        @include submit-b;
+    
+    }
+}

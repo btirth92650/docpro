@@ -1,0 +1,27 @@
+<section class="process-section">
+    
+    <div class="process-header">
+        <p>PROCESS</p>
+        <h2>Appointment Process</h2>
+    </div>
+    <div class="process-inner-content">
+        <div class="row p-i-c-row">
+            <div class="col-md-4 p-i-c-col" *ngFor="let item of process" [ngStyle]="{'border':item.border === 'show' ? 'block' : 'none'}">
+                <div class="container">
+                    <div class="p-i-content-box">
+                        <div class="p-i-c-image">
+                            <img src="{{item.image}}" alt="">
+                            <span>{{item.num}}</span>
+                        </div>
+                        <div class="p-i-c-name">
+                            <h2>{{item.name}}</h2>
+                        </div>
+                        <div class="p-i-c-description">
+                            <p>{{item.description}}</p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
