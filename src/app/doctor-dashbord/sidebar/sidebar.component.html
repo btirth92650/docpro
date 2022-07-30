@@ -1,15 +1,17 @@
-<section class="sidebar-section">
-    <div class="sidebar-box">
-        <div class="sidebar-header">
-            <div class="sidebar-imagebox">
-                <img src="	http://azim.commonsupport.com/Docpro/assets/images/resource/profile-2.png" alt="">
+<section class="sidebar-section" >
+    <div class="sidebar-box" >
+        <div class="sidebar-header" >
+            <div class="sidebar-imagebox" *ngFor="let item of getData">
+                <!-- <img src="	http://azim.commonsupport.com/Docpro/assets/images/resource/profile-2.png" alt="">\ -->
+                <img height="250px" width="375px"  [src]="_d.bypassSecurityTrustUrl(item.fileUpload)">
+
             </div>
         </div>
         <div class="sidebar-listbox">
             <div class="sidebar_c-box">
-                <div class="sidebar_content">
-                    <h1>Dr. Rex Allen</h1>
-                    <p>MDS - Periodontology</p>
+                <div class="sidebar_content" *ngFor="let item of getData">
+                    <h1>{{item.drName}}</h1>
+                    <p>{{item.drDegree}}</p>
                 </div>
             </div>
             <ul class="sidebar-list-item">

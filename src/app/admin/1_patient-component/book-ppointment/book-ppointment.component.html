@@ -175,26 +175,30 @@
               </div>
               <div class="Booking-Summary-item">
                 <ul class="item-liest-1">
-                  <li>Date</li>
-                  <li>Time</li>
-                  <li>Doctor name</li>
+                  <li>Date : </li>
+                  <li>Time : </li>
+                  <li>Doctor name :</li>
                 </ul>
-                <ul class="item-liest-2">
-                  <li>07/10/2020</li>
-                  <li>09:30AM</li>
-                  <li>Dr. Agnes Ayres</li>
+                <ul class="item-liest-2" *ngFor="let item of getData">
+                  <li>{{item.date}}</li>
+                  <li>{{item.time}}</li>
+                  <li>Dr.julia Jhones</li>
                 </ul>
 
               </div>
 
-              <div class="Booking-Summary-item">
+              <div class="Booking-Summary-item" *ngFor="let item of service">
                 <ul class="item-liest-1">
-                  <li>General Consultation</li>
-                  <li>Back Pain</li>
+                  <li>{{item.name1}}</li>
+                  <li>{{item.name2}}</li>
+                  <li>{{item.name3}}</li>
+                  <li>{{item.name4}}</li>
                 </ul>
                 <ul class="item-liest-2">
-                  <li>$50</li>
-                  <li>$60</li>
+                  <li>{{item.code1}}</li>
+                  <li>{{item.code2}}</li>
+                  <li>{{item.code3}}</li>
+                  <li>{{item.code4}}</li>
                 </ul>
               </div>
               <div class="Booking-Summary-item">
@@ -202,14 +206,14 @@
                   <li class="total">Total</li>
                 </ul>
                 <ul class="item-liest-2">
-                  <li class="total-amount">$110</li>
+                  <li class="total-amount">${{grandTotal}}</li>
                 </ul>
                 <div class="button-comfirm-and-pay">
 
                 </div>
 
               </div>
-              <button type="button" [disabled]="!appointmentInfo.valid" (click)="submit()" class="btn btn-primary joinnow">Comfirm and Pay</button>
+              <button type="button" [disabled]="!appointmentInfo.valid" (click)="submit()" class="btn btn-primary joinnow">Confirm and Pay</button>
             </div>
           </div>
         </div>

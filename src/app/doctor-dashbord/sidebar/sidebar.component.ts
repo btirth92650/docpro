@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
+import { RegisterService } from 'src/app/services/register.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
+  getData = this.registerSer.retrievePassedData()
+  constructor(private registerSer:RegisterService, public _d:DomSanitizer) { }
 
   ngOnInit(): void {
   }

@@ -13,6 +13,7 @@ import { MyPatientComponent } from './my-patient/my-patient.component';
 import { AppointmentComponent } from './appointment/appointment.component';
 import { SheduleTimingComponent } from './shedule-timing/shedule-timing.component';
 import { SharedModule } from '../sharedModule/shared/shared.module';
+import { DoctorLoginComponent } from './doctor-login/doctor-login.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SharedModule } from '../sharedModule/shared/shared.module';
     MyPatientComponent,
      DashbordComponent,
     AppointmentComponent,
-    SheduleTimingComponent
+    SheduleTimingComponent,
+    DoctorLoginComponent
   ],
   imports: [
     CommonModule,

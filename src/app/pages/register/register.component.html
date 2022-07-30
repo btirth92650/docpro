@@ -6,7 +6,7 @@
 </div>
 
 <div class="container h-s-content">
-<h5><a routerLink="/admin">Home </a></h5>
+<h5><a routerLink="/login">Home </a></h5>
 <i class="fa fa-chevron-right" aria-hidden="true"></i>
 <h5 >Sign Up</h5>
 </div>
@@ -42,10 +42,42 @@
                 <label for="formFile" class="form-label">upaload your picture</label>
                 <input class="form-control"  (change)="fileChange($event)" type="file" id="formFile">
               </div>
-            <div class="r-button">
-                <button  class="btn btn-success ">Register Now</button>
+                <div class="re-doctor-modal">
+                    <!-- Button trigger modal -->
+                    <div class="r-button">
+
+                    <button type="button" class=".reg-button" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        Register Now
+                    </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/189/189677.png?w=740&t=st=1658983354~exp=1658983954~hmac=ab7b7e6fefe19702fe927e680c25c91c5c29393e3cb2109bf4c9e8633a090447" alt="">
+                                    <h4>Registration Successfully !!</h4>
+                                    <ul>
+                                        <li>Username: &nbsp;doc</li>
+                                        <li>Password: &nbsp;123</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+
+                                    <button type="button" (click)="submit()" class="btn btn-primary" data-bs-dismiss="modal">continue</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
     </form>
     <div class="p-d-button">
         <button routerLink="/register" class="btn btn-primary facebook-btn ">Login with Facebook </button>

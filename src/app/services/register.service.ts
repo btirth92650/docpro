@@ -10,9 +10,10 @@ export class RegisterService {
   allPassedData:any=[]
   constructor() { } 
 
-
+ 
   setData(data) {
-    this.allPassedData.push(data);
+    this.allPassedData= data;
+    // this.allPassedData.push(data);
   }
 
   retrievePassedData() {

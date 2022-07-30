@@ -1,6 +1,6 @@
 <div class="login-section">
     <div class="login-h-icon">
-        <img src="http://azim.commonsupport.com/Docpro/assets/images/logo.png" alt="">
+        <h1>Doctor Login</h1>
         
     </div>
     
@@ -8,26 +8,26 @@
 <form  [formGroup]="loginForm" >
    <div class="login-background">
     <div class="login-box">
-        <div class="title-box">
-            <h2> Doctor Login </h2>
+        <div class="title-box"  *ngFor="let item of getData">
+            <h2> {{item.drName}} </h2>
         </div>
             <div class="content-item">
                 <div class="username mb-2">
                     <label class="form-label">username:</label>
-                    <input type="text" class="form-control"  (change)="method_username($event)" placeholder="Enter usernaem...">
+                    <input type="text" class="form-control"  (change)="method_username($event)" placeholder="Enter username...">
                 </div>
                 <div class="password ">
                     <label class="form-label">password:</label>
-                    <input type="text" class="form-control"  (change)="method_password($event)" placeholder="Enter password...">
+                    <input type="text" class="form-control" (change)="method_password($event)" placeholder="Enter password...">
                 </div>
             </div>
             <div class="button">
                 <button (click)="submit()" class="btn btn-success Login">Login Now</button>
             </div>
-            <div class="p-d-button">
+            <!-- <div class="p-d-button">
                 <button routerLink="/register" class="btn btn-primary Facebook ">Go To Signup Page.. </button>
                 <button  class="btn btn-danger google ">forgot-password</button>
-            </div>           
+            </div>            -->
         </div>
     </div>
 </form>

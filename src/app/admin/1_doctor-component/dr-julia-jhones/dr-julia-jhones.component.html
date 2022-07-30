@@ -24,7 +24,7 @@
                                 <div class="f-content-box">
                                     <div class="title">
                                         <div class="title-name">
-                                            <h3>Dr. Julia Jhones    </h3>
+                                            <h3>Dr. Julia Jhones </h3>
                                             <i class="fa fa-check-circle-o" aria-hidden="true"></i>
                                         </div>
                                         <div class="d-icon">
@@ -150,14 +150,14 @@
                             <div class="overview-content">
                                 <div class="o-content">
                                     <h1>Location:</h1>
-                                    
+
                                 </div>
                                 <div class="o-content">
                                     <h1>New Apollo Hospital:</h1>
                                     <div class="location">
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                                         <span>369 San Miguel Dr Ste 200 Newport
-                                        Beach,CA,92660</span>
+                                            Beach,CA,92660</span>
                                     </div>
                                     <div class="number">
                                         <i class="fa fa-phone" aria-hidden="true"></i>
@@ -177,19 +177,21 @@
                         <p>Monday to Friday: 09:00Am-05:00PM</p>
                     </div>
                     <div class="d-content-box">
-                      <form action="" [formGroup]="bookingAppointment">
-                        <div class="form-content">
-                            <div class="form-group form_item">
-                                <input type="date" formControlName="date" class="form-control">
-                            </div>
+                        <form action="" [formGroup]="bookingAppointment">
+                            <div class="form-content">
+                                <div class="form-group form_item">
+                                    <input type="date" formControlName="date" class="form-control">
+                                </div>
 
-                            <div class="form-group form_item">
-                                <input type="time" formControlName="time" class="form-control" name="">
+                                <div class="form-group form_item">
+                                    <input type="time" formControlName="time" class="form-control" name="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-content-1">
-                            <h3>Chose Service</h3>
-                            <div class="cheak-box form_item">
+                            <div class="form-content-1">
+                                <h3>Chose Service</h3>
+                                <p-multiSelect [options]="services" formControlName="services"
+                                    defaultLabel="Select a Service" optionLabel="name" display="chip"></p-multiSelect>
+                                <!-- <div class="cheak-box form_item">
                                 <div class="form-check ">
                                     <input type="checkbox" formControlName="newPatientVisit" class="form-check-input">
                                     <label class="form-check-label">New Patient Visit <span>$40</span></label>
@@ -212,12 +214,13 @@
                                     <input type="checkbox" formControlName="diabetesConsultation" class="form-check-input">
                                     <label class="form-check-label">Diabetes Consultation <span>$35</span></label>
                                 </div>
+                            </div> -->
+                                <div class="book-a-button">
+                                    <button (click)="submit()">Book Appointment <i class="fa fa-arrow-right"
+                                            aria-hidden="true"></i></button>
+                                </div>
                             </div>
-                            <div class="book-a-button">
-                                <button (click)="submit()" >Book Appointment <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-                            </div>
-                        </div>
-                      </form>
+                        </form>
                     </div>
                 </div>
             </div>

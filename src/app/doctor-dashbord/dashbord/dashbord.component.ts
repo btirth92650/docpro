@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 import { RegisterService } from 'src/app/services/register.service';
 
 @Component({
@@ -9,9 +10,11 @@ import { RegisterService } from 'src/app/services/register.service';
 })
 export class DashbordComponent implements OnInit {
   
-  constructor(private registerSer:RegisterService,public _d: DomSanitizer) { }
+  constructor(private registerSer:RegisterService,public _d: DomSanitizer,private router:Router) { }
   
-  getData = this.registerSer.retrievePassedData()
+  // @Output() editRequest = new EventEmitter<any>()
+
+  getData = this.registerSer.retrievePassedData() 
   
   
   ngOnInit(): void {
@@ -19,13 +22,18 @@ export class DashbordComponent implements OnInit {
     //    this.imagePreview.push(element.fileUpload) = <or> element.fileUpload
     // });
     
-    // console.log(this.getData);
+    //  console.log(this.getData);
     // console.log(this.imgsrc,"data get =======");
   }
   
   
-  
-
+  deletData(item){
+    let abc:any = this.getData.findIndex((el:any):any=>{
+      return el.drName == item.drName
+    })
+    this.getData.splice(abc,1)
+  }
+ 
     
   
   // doctorappointment=[

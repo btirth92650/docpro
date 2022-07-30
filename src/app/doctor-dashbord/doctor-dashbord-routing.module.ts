@@ -5,12 +5,15 @@ import { AppointmentComponent } from './appointment/appointment.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { DashbordComponent } from './dashbord/dashbord.component';
 import { DoctorDashbordComponent } from './doctor-dashbord.component';
+import { DoctorLoginComponent } from './doctor-login/doctor-login.component';
 import { MyPatientComponent } from './my-patient/my-patient.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { SheduleTimingComponent } from './shedule-timing/shedule-timing.component';
 
 const routes: Routes = [
+  {path:'doctor-login',component:DoctorLoginComponent},
+
   {
     path: '', component: DoctorDashbordComponent,
 
