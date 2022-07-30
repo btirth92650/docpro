@@ -9,8 +9,12 @@
 
   .image-box{
     position: relative;
-    top: 100px;
-    left: 60px;
+    top: 150px;
+    left: 25px;
+    img{
+      max-width: 90%;
+    }
+  
   }
 
 
@@ -90,7 +94,7 @@
 }
 
 .apppstroe {
-  font-size: 31px;
+  font-size: 27px;
   color: white;
   font-weight: 700;
 }
@@ -103,7 +107,7 @@
 }
 
 .apppstroe1 {
-  font-size: 31px;
+  font-size: 27px;
   color: white;
   font-weight: 700;
 }

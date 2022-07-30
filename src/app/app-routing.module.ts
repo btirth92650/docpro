@@ -18,6 +18,8 @@ const routes: Routes = [
 
   {path:'patient-dashbord',
   loadChildren:()=>import('./patient-dashbord/patient-dashbord.module').then(m=>m.PatientDashbordModule)},
+
+  {path:'**',component:LoginComponent}
 ];
 
 @NgModule({
