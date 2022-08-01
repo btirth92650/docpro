@@ -12,11 +12,8 @@
                 </div>
                 <div class="review-item">
                     <h5>{{item.title}}
-                        <div class="review-star">
-                            <i class="{{item.staricon}}" aria-hidden="true"></i>
-                            <i class="{{item.staricon}}" aria-hidden="true"></i>
-                            <i class="{{item.staricon}}" aria-hidden="true"></i>
-                            <i class="{{item.staricon}}" aria-hidden="true"></i>
+                        <div class="review-star" *ngFor="let item of getData">
+                            <ngx-star-rating  [(ngModel)]="item.rating"   [id]="'rating1'"></ngx-star-rating>
                         </div>
                     </h5>
                     <h6><i class="{{item.calculatoricon}}" aria-hidden="true"></i>{{item.date}}</h6>

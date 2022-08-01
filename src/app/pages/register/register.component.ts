@@ -10,7 +10,7 @@ import { RegisterService } from 'src/app/services/register.service';
 })
 export class RegisterComponent implements OnInit {
   
-   data:any =[];
+  data:any =[];
   imgsrc:any;
   registrationForm!:FormGroup
   constructor(private formbuilder:FormBuilder,private registerSer:RegisterService,private router:Router) { }
@@ -31,11 +31,12 @@ export class RegisterComponent implements OnInit {
     console.log(this.registrationForm);
     this.data.push(this.registrationForm.value)
     this.registerSer.setData (this.data);
-    // alert("your data has been submited succesfuly !!");
-    this.router.navigate(['/doctor-dashbord/doctor-login'])
+    
     // console.log(this.data);
+    // alert("your data has been submited succesfuly !!");
+    // this.router.navigate(['/doctor-dashbord/doctor-login'])
     // this.registerSer.setData(this.registrationForm.value)
-    // this.router.navigate(['/doctor-dashbord/dashbord']);
+    this.router.navigate(['/doctor-dashbord/dashbord']);
   }
 
   
