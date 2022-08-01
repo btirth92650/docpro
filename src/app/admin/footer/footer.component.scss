@@ -106,6 +106,7 @@
         color: #fff;
         padding: 8px 9px;
         transition: all 500ms ease;
+        font-weight: 700;
 
         &:hover {
             color: #39cabb;
@@ -115,6 +116,7 @@
 
     h1 {
         color: #fff;
+        margin-bottom: 30px;
         
     }
 
@@ -126,12 +128,17 @@
     p {
         color: #fff;
         padding: 8px 9px;
+        font-size: 20px;
+        font-weight: 600;
+
+
     }
 
     a {
         text-decoration: none;
         color: #fff;
         padding: 0px 15px;
+        font-weight: 700;
        
         &:hover {
             color: #39cabb;
@@ -161,7 +168,9 @@
     span {
         color: #fff;
         padding: 8px 15px;
-        line-height: 26px
+        line-height: 26px;
+        font-weight: 700;
+
     }
 }
 
