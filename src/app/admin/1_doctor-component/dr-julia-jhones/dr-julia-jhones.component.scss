@@ -256,13 +256,11 @@
     }
 }
 
-// overview page, experience page
 
 .overview-fullbox {
     margin-top: 40px;
 
     .overview-content {
-        border-bottom: 1px solid #e5e7ec;
         padding: 40px 40px 0px 40px;
 
         .form_item {
@@ -304,3 +302,19 @@
         }
     }
 }
+
+    ::ng-deep .p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus {
+   
+    box-shadow: none ;
+  }
+  ::ng-deep .p-tabview .p-tabview-nav li .p-tabview-nav-link{
+    background: #453f85;
+  }
+  ::ng-deep .p-tabview .p-tabview-nav{
+    background: #453f85;
+  } 
+  ::ng-deep .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link{
+    background: none;
+    color: #39cabb;
+    
+  }
