@@ -9,23 +9,29 @@ import { BookAppointmentService } from 'src/app/services/book-appointment.servic
 })
 export class BookPpointmentComponent implements OnInit {
 
-  getData = this.bookAppointmentSer.retriveDataPassed()
+  getData = this.bookAppointmentSer.retriveDataPassed() 
 
   grandTotal: any = 0
-  service: any = []
+  service: any = [] 
   appointmentInfo: FormGroup
   constructor(private formbuilder: FormBuilder, private bookAppointmentSer: BookAppointmentService) { }
 
   ngOnInit(): void {
 
+    
+
     this.getData.map(element => {
       this.service.push(...element.services)  //(...) this is called spread oprator and this work will be arrey in arrey object directly find)
-    });
+    }); 
 
- 
-    this.service.map((ele) => {
-      this.grandTotal += ele[Object.keys(ele)[3]] // this is index vise total using map method
-    })
+    // this.service.map((ele) => {
+    //   this.grandTotal += ele[Object.keys(ele)[3]] // this is index vise total using map method
+    // })
+
+
+     this.grandTotal= this.service.reduce((pv,cv)=>{
+      return pv + cv [Object.keys(cv) [3]]
+  },0)
 
     // this.service.map(el=>{
     //   this.grandTotal += el.code  // this is element vise total using map method

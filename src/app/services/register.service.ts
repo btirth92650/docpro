@@ -13,7 +13,9 @@ export class RegisterService {
  
   setData(data) {
     this.allPassedData= data;
-    // this.allPassedData.push(data);
+    //  this.allPassedData.push(data);
+    console.log(this.allPassedData);
+    
   }
 
   retrievePassedData() {

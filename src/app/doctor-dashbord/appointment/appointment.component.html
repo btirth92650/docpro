@@ -1,23 +1,26 @@
 <div class="appointment-header">
     <h3>Appointment Lists</h3>
 
-    <div class="appointment-box" *ngFor="let item of appointment">
+    <div class="appointment-box" *ngFor="let item of appointment ">
         <div class="appointment-image">
             <img src="{{item.image}}" alt="">
         </div>
         <div class="appointment-item-2">
-            <h4>{{item.title}}</h4>
+            <div>
+                <h4>{{item.title}}</h4>
             <p><i class="fa fa-clock-o" aria-hidden="true"></i>{{item.time}}</p>
             <p><i class="fa fa-map-marker" aria-hidden="true"></i>{{item.location}}</p>
             <p><i class="fa fa-tint" aria-hidden="true"></i>{{item.test}}</p>
             <p><i class="fa fa-paper-plane-o" mailto:aria-hidden="true"></i>{{item.email}}</p>
             <p><i class="fa fa-phone" aria-hidden="true"></i>{{item.phone}}</p>
+            </div>
+            <div class="appointment-buuton">
+                <button type="submit" class=" submit-button"><i class="fa fa-check" aria-hidden="true"></i>Accept</button>
+                <button type="submit" class=" cancel-button"><i class="fa fa-times" aria-hidden="true"></i>Cancel</button>
+    
+            </div>
         </div>
-        <div class="appointment-buuton">
-            <button type="submit" class=" submit-button"><i class="fa fa-check" aria-hidden="true"></i>Accept</button>
-            <button type="submit" class=" cancel-button"><i class="fa fa-times" aria-hidden="true"></i>Cancel</button>
-
-        </div>
+        
     </div>
 </div>
 

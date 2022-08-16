@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyPatientComponent implements OnInit {
 
+  searchText:string = ''
+
   constructor() { }
 
   ngOnInit(): void {

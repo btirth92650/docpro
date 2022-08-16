@@ -5,14 +5,17 @@
             <h1>Patient List</h1>
             <div class="que_ans-search-wrapper">
                 <div class="que_ans-searchbar">
-                  <input  type="text"   placeholder="search">
+                  <input  type="text"   [(ngModel)]="searchText" placeholder= "search">
                   <i class="fa fa-search" aria-hidden="true"></i>
                 </div>
               </div> 
         </div>
-           <!-- table -->
-
-    <table class="table">
+           
+        
+        
+        <!-- table -->
+    
+    <!-- <table class="table" *ngIf="(patientlist | filter: searchText).length > 0; else noResults ">
         <thead>
             <tr>
                 <th scope="col">#</th>
@@ -27,7 +30,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let item of patientlist, let i=index">
+            <tr *ngFor="let item of patientlist | filter:searchText, let i=index ">
                 <th scope="row">{{i+1}}</th>
                 <td>
                     <div class="dr-td-box">
@@ -61,6 +64,49 @@
             </tr>
 
         </tbody>
-    </table>
+    </table> -->
+    
+    <p-table [value]="patientlist" [paginator]="true" [rows]="5" [showCurrentPageReport]="true"
+    [scrollable]="true" scrollDirection="both" responsiveLayout="scroll"
+    class="pTableHeader" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+    [rowsPerPageOptions]="[5,10,15]" >
+
+    <ng-template pTemplate="header">
+        <tr>
+            <th style="min-width: 250px;">Patient Name</th>
+            <th style="min-width: 100px;">Sex</th>
+            <th style="min-width: 250px;">Address</th>
+            <th style="min-width: 200px;">Mobile</th>
+            <th style="min-width: 100px;">Age</th>
+            <th style="min-width: 50px;">Blood Group	</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-item >
+        <tr class="pTable">
+            <td style="min-width: 250px;">
+                <div class="dr-td-box">
+                    <div class="dr-td-img">
+                        <img src="{{item.image}}" alt=""> 
+                    </div>
+                    <div class="dr-td-item">
+                        <p class="dr-name-item">{{item.patientname}}</p>
+                    </div>
+                </div>
+            </td>
+            <td style="min-width: 100px;">{{item.sex}}</td>
+            <td style="min-width: 250px;">{{item.address}}</td>
+            <td style="min-width: 200px;">{{item.mobileno}}</td>
+            <td style="min-width: 100px;">{{item.age}}</td>
+            <td style="min-width: 50px;"> {{item.bloodgroup}}</td>
+            
+        </tr>
+    </ng-template>
+    
+    <ng-template #noResults>
+        <p style="text-align: center;">No results found for "{{searchText}}".</p>
+      </ng-template>
+</p-table>
+
+    
     </section>
 </div>

@@ -8,6 +8,8 @@ import { FullCalendarModule } from '@fullcalendar/angular';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import { NgxStarRatingModule } from 'ngx-star-rating';
+import { FilterPipe } from 'src/app/pipe/filter.pipe';
+import {MatButtonModule} from '@angular/material/button';
 
 FullCalendarModule.registerPlugins([
   dayGridPlugin,
@@ -17,6 +19,7 @@ FullCalendarModule.registerPlugins([
 @NgModule({
   declarations: [
     FooterComponent,
+    FilterPipe
     
     
   ],
@@ -30,7 +33,10 @@ FullCalendarModule.registerPlugins([
     FullCalendarModule,
     PrimengModule,
     FooterComponent,
-    NgxStarRatingModule
+    NgxStarRatingModule,
+    FilterPipe,
+    MatButtonModule
+
   
   ]
   

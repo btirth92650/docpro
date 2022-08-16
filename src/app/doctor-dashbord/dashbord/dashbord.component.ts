@@ -22,7 +22,7 @@ export class DashbordComponent implements OnInit {
     //    this.imagePreview.push(element.fileUpload) = <or> element.fileUpload
     // });
     
-    //  console.log(this.getData);
+     console.log(this.getData);
     // console.log(this.imgsrc,"data get =======");
   }
   

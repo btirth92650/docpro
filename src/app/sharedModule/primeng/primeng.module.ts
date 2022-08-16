@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {ButtonModule} from 'primeng/button';
 import {MultiSelectModule} from 'primeng/multiselect';
-import {TabViewModule} from 'primeng/tabview';
-
+import {PaginatorModule} from 'primeng/paginator';
+import {TableModule} from 'primeng/table';
 @NgModule({
   declarations: [], 
   imports: [
@@ -12,7 +12,8 @@ import {TabViewModule} from 'primeng/tabview';
   exports:[
     ButtonModule,
     MultiSelectModule,
-    TabViewModule,
+    PaginatorModule,
+    TableModule
 
   ]
 })

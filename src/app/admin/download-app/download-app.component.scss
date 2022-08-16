@@ -3,14 +3,18 @@
   background: url(http://azim.commonsupport.com/Docpro/assets/images/shape/shape-17.png) no-repeat 7% 100%,
     url(http://azim.commonsupport.com/Docpro/assets/images/shape/shape-19.png)no-repeat 90% 0%,
      #453f85;
-  width: 100%;
+  width: 100%; 
   height: 614px;
   }
 
   .image-box{
     position: relative;
-    top: 100px;
-    left: 60px;
+    top: 150px;
+    left: 25px;
+    img{
+      max-width: 90%;
+    }
+  
   }
 
 
@@ -90,7 +94,7 @@
 }
 
 .apppstroe {
-  font-size: 31px;
+  font-size: 27px;
   color: white;
   font-weight: 700;
 }
@@ -103,7 +107,7 @@
 }
 
 .apppstroe1 {
-  font-size: 31px;
+  font-size: 27px;
   color: white;
   font-weight: 700;
 }

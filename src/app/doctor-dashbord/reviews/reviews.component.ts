@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ReviewService } from 'src/app/services/review.service';
 
 @Component({
   selector: 'app-reviews',
@@ -7,10 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReviewsComponent implements OnInit {
 
-  constructor() { }
+  getData = this.reviewSer.retriveSetData()
+  rating:number = 0
+
+  constructor(private reviewSer:ReviewService) { }
 
   ngOnInit(): void {
+    // console.log(this.getData);
+
+    // this.getData.forEach(element => {
+    //   this.rating = element.rating  //(...) this is called spread oprator and this work will be arrey in arrey object directly find)
+    // });     
   }
+  
 
   reviews=[
     {
@@ -77,4 +87,6 @@ export class ReviewsComponent implements OnInit {
       buttonclass:'replay-button',
     },
   ]
+
+ 
 }

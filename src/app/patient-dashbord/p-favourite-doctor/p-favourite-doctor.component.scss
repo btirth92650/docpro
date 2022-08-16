@@ -47,7 +47,7 @@
                 }
 
                 h3 {
-                    font-size: 25px;
+                    font-size: 22px;
                     font-weight: 700;
 
                 }
@@ -88,21 +88,25 @@
             }
 
             .bn-button {
+                display: flex;
+                justify-content: end;
 
                 button {
-                    background-color: #39cabb;
-                    border: none;
-                    border-radius: 30px;
-                    padding: 7px 20px;
-                    font-size: 20px;
-                    color: #fff;
-                    font-weight: 600;
-                    margin: 0 0 0 153px;
-                    transition: all 0.8s ease-in-out;
+                    // background-color: #39cabb;
+                    // border: none;
+                    // border-radius: 30px;
+                    // padding: 7px 20px;
+                    // font-size: 20px;
+                    // color: #fff;
+                    // font-weight: 600;
+                    // transition: all 0.8s ease-in-out;
 
-                    &:hover {
-                        background-color: #453f85;
-                    }
+                    // &:hover {
+                    //     background-color: #453f85;
+                    // }
+                    @include submit-b;
+                    margin-top: 0px ;
+                    padding: 7px 20px;
                 }
             }
         }
