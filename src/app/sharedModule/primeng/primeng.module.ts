@@ -4,6 +4,8 @@ import {ButtonModule} from 'primeng/button';
 import {MultiSelectModule} from 'primeng/multiselect';
 import {PaginatorModule} from 'primeng/paginator';
 import {TableModule} from 'primeng/table';
+import {TabViewModule} from 'primeng/tabview';
+
 @NgModule({
   declarations: [], 
   imports: [
@@ -13,7 +15,8 @@ import {TableModule} from 'primeng/table';
     ButtonModule,
     MultiSelectModule,
     PaginatorModule,
-    TableModule
+    TableModule,
+    TabViewModule
 
   ]
 })
